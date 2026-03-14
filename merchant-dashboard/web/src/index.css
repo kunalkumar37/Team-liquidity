@@ -1,0 +1,119 @@
+/* === RESET & BASE STYLES === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Pine Labs Colors */
+  --pl-green: #1a8c5b;
+  --pl-green-dark: #14704a;
+  --pl-green-light: #e8f5ee;
+  --pl-green-bg: #f0faf5;
+  --pl-green-active: #165c3f;
+  --pl-black: #1a1a2e;
+  --pl-dark: #2d2d3f;
+  --pl-gray-900: #1f2937;
+  --pl-gray-700: #374151;
+  --pl-gray-600: #4b5563;
+  --pl-gray-500: #6b7280;
+  --pl-gray-400: #9ca3af;
+  --pl-gray-300: #d1d5db;
+  --pl-gray-200: #e5e7eb;
+  --pl-gray-100: #f3f4f6;
+  --pl-gray-50: #f9fafb;
+  --pl-white: #ffffff;
+  --pl-bg: #fafbfc;
+  --pl-border: #e5e7eb;
+  --pl-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --pl-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --pl-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --pl-radius: 8px;
+  --pl-radius-sm: 4px;
+  --pl-radius-lg: 12px;
+  --pl-sidebar-width: 200px;
+  --pl-sidebar-collapsed: 60px;
+  --pl-topbar-height: 36px;
+  --pl-header-height: 60px;
+  --pl-rupee-color: #1a8c5b;
+  --pl-orange: #f59e0b;
+  --pl-blue: #3b82f6;
+  --pl-purple: #8b5cf6;
+  --pl-red: #ef4444;
+  --pl-teal: #14b8a6;
+  --pl-pink: #ec4899;
+}
+
+html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--pl-bg);
+  color: var(--pl-gray-900);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* === LAYOUT === */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.page-content {
+  flex: 1;
+  padding: 24px 32px;
+  overflow-y: auto;
+}
+
+/* === SCROLLBAR === */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--pl-gray-300);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pl-gray-400);
+}

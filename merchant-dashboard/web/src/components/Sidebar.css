@@ -1,0 +1,163 @@
+.sidebar {
+  width: var(--pl-sidebar-width);
+  min-height: 100vh;
+  background: var(--pl-white);
+  border-right: 1px solid var(--pl-border);
+  display: flex;
+  flex-direction: column;
+  transition: width 0.25s ease;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.sidebar--collapsed {
+  width: var(--pl-sidebar-collapsed);
+}
+
+.sidebar__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 16px;
+  border-bottom: 1px solid var(--pl-border);
+}
+
+.sidebar__logo-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar__logo-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.sidebar__logo-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--pl-gray-900);
+  white-space: nowrap;
+}
+
+.sidebar__logo-subtitle {
+  font-size: 11px;
+  color: var(--pl-gray-500);
+  white-space: nowrap;
+}
+
+.sidebar__nav {
+  flex: 1;
+  padding: 12px 0;
+  overflow-y: auto;
+}
+
+.sidebar__section {
+  margin-bottom: 8px;
+}
+
+.sidebar__section-title {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--pl-gray-400);
+  letter-spacing: 1.2px;
+  padding: 16px 20px 8px;
+  text-transform: uppercase;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  color: var(--pl-gray-600);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  border-left: 3px solid transparent;
+  text-decoration: none;
+}
+
+.sidebar__link:hover {
+  background: var(--pl-gray-50);
+  color: var(--pl-gray-900);
+}
+
+.sidebar__link--active {
+  background: var(--pl-green-light);
+  color: var(--pl-green);
+  border-left-color: var(--pl-green);
+  font-weight: 600;
+}
+
+.sidebar__link--active:hover {
+  background: var(--pl-green-light);
+  color: var(--pl-green);
+}
+
+.sidebar__icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+/* Liquidity Hub accent link */
+.sidebar__link--accent {
+  position: relative;
+}
+
+.sidebar__link--accent:not(.sidebar__link--active) {
+  color: var(--pl-green);
+}
+
+.sidebar__link--accent:not(.sidebar__link--active):hover {
+  background: var(--pl-green-light);
+  color: var(--pl-green-dark);
+}
+
+.sidebar__collapse-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 20px;
+  border-top: 1px solid var(--pl-border);
+  color: var(--pl-gray-500);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidebar__collapse-btn:hover {
+  color: var(--pl-gray-700);
+  background: var(--pl-gray-50);
+}
+
+.sidebar__collapse-icon {
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.sidebar__collapse-icon--rotated {
+  transform: rotate(180deg);
+}
+
+/* Collapsed state overrides */
+.sidebar--collapsed .sidebar__link {
+  justify-content: center;
+  padding: 12px;
+}
+
+.sidebar--collapsed .sidebar__collapse-btn {
+  justify-content: center;
+  padding: 16px;
+}
+
+.sidebar--collapsed .sidebar__logo {
+  justify-content: center;
+  padding: 20px 8px;
+}

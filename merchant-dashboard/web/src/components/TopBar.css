@@ -1,0 +1,114 @@
+/* Environment Banner */
+.env-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 24px;
+  background: var(--pl-green-light);
+  border-bottom: 1px solid #d1e7dd;
+}
+
+.env-banner__left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--pl-gray-700);
+}
+
+.env-banner__right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.env-mode-btn {
+  padding: 4px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.env-mode-btn--test {
+  background: transparent;
+  color: var(--pl-gray-600);
+}
+
+.env-mode-btn--test:hover {
+  background: var(--pl-white);
+}
+
+.env-mode-btn--live {
+  background: var(--pl-green);
+  color: var(--pl-white);
+  border-radius: 20px;
+  padding: 4px 16px;
+}
+
+.env-mode-btn--live:hover {
+  background: var(--pl-green-dark);
+}
+
+/* Top Bar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 24px;
+  background: var(--pl-white);
+  border-bottom: 1px solid var(--pl-border);
+  min-height: 52px;
+}
+
+.topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topbar__action {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  color: var(--pl-gray-600);
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: var(--pl-radius-sm);
+  transition: all 0.15s ease;
+}
+
+.topbar__action:hover {
+  background: var(--pl-gray-50);
+  color: var(--pl-gray-900);
+}
+
+.topbar__divider {
+  width: 1px;
+  height: 20px;
+  background: var(--pl-gray-200);
+  margin: 0 4px;
+}
+
+.topbar__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--pl-green-active);
+  color: var(--pl-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.topbar__avatar:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,121 @@
+.settings {
+  position: relative;
+}
+
+.settings__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.settings__card {
+  background: var(--pl-white);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-lg);
+  padding: 28px 32px;
+}
+
+.settings__card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--pl-gray-900);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--pl-gray-100);
+}
+
+.settings__field {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--pl-gray-50);
+}
+
+.settings__field:last-child {
+  border-bottom: none;
+}
+
+.settings__label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--pl-gray-500);
+  min-width: 160px;
+}
+
+.settings__value {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--pl-gray-900);
+}
+
+.settings__value--mono {
+  font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+/* Reused page-header styles */
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.page-header__left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.page-header__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--pl-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.page-header__icon--green {
+  background: var(--pl-green-light);
+}
+
+.page-header__title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--pl-gray-900);
+  margin-bottom: 4px;
+}
+
+.page-header__subtitle {
+  font-size: 13px;
+  color: var(--pl-gray-500);
+}
+
+/* Product Tour */
+.product-tour {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--pl-gray-900);
+  color: var(--pl-white);
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-tour:hover {
+  background: var(--pl-black);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}

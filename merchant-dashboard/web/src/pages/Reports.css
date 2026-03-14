@@ -1,0 +1,272 @@
+.reports {
+  position: relative;
+}
+
+.reports__title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--pl-gray-900);
+  margin-bottom: 20px;
+}
+
+.reports__layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 24px;
+}
+
+/* Chart Section */
+.reports__chart-section {
+  background: var(--pl-white);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-lg);
+  padding: 24px;
+}
+
+.reports__daterange {
+  margin-bottom: 20px;
+}
+
+.payments-daterange {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius);
+  background: var(--pl-white);
+}
+
+.date-input {
+  font-size: 13px;
+  color: var(--pl-gray-700);
+  white-space: nowrap;
+}
+
+.date-arrow {
+  color: var(--pl-gray-400);
+  font-size: 14px;
+}
+
+.date-calendar-icon {
+  color: var(--pl-gray-400);
+  margin-left: 4px;
+}
+
+/* Chart Controls */
+.reports__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.reports__control-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.reports__dropdown {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--pl-gray-700);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.reports__dropdown:hover {
+  color: var(--pl-gray-900);
+}
+
+.reports__control-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.reports__toggle {
+  padding: 4px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--pl-gray-500);
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.reports__toggle:hover {
+  color: var(--pl-gray-700);
+}
+
+.reports__toggle--active {
+  color: var(--pl-gray-900);
+  border-color: var(--pl-border);
+  background: var(--pl-white);
+}
+
+/* Chart Container */
+.reports__chart-container {
+  height: 280px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+/* Scroll Indicator */
+.reports__scroll-indicator {
+  height: 6px;
+  background: var(--pl-gray-100);
+  border-radius: 3px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.reports__scroll-bar {
+  width: 60%;
+  height: 100%;
+  background: var(--pl-blue);
+  border-radius: 3px;
+}
+
+/* Chart Legend */
+.reports__legend {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.reports__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--pl-gray-600);
+}
+
+.reports__legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.reports__legend-dot--teal {
+  background: #14b8a6;
+}
+
+.reports__legend-dot--indigo {
+  background: #6366f1;
+}
+
+.reports__download {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--pl-gray-700);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.reports__download:hover {
+  color: var(--pl-gray-900);
+}
+
+/* Payment Methods Section */
+.reports__payment-methods {
+  background: var(--pl-white);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-lg);
+  padding: 24px;
+}
+
+.reports__pm-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--pl-gray-900);
+  margin-bottom: 20px;
+}
+
+.reports__pm-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.reports__pm-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--pl-gray-100);
+}
+
+.reports__pm-item:last-child {
+  border-bottom: none;
+}
+
+.reports__pm-item-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reports__pm-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.reports__pm-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--pl-gray-700);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.reports__pm-percentage {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--pl-gray-900);
+}
+
+/* Product Tour */
+.product-tour {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--pl-gray-900);
+  color: var(--pl-white);
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-tour:hover {
+  background: var(--pl-black);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
